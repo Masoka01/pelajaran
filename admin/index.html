@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard — Cilok Pak Mayoni</title>
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    .admin-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .admin-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--space-3) var(--space-4);
+      border-bottom: 1px solid var(--color-border);
+      background: var(--color-surface);
+    }
+    .admin-nav .brand {
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .admin-nav-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+    }
+    .admin-email {
+      font-size: 14px;
+      color: var(--color-text-muted);
+    }
+    .admin-main {
+      flex: 1;
+      padding: var(--space-6) var(--space-4);
+      background: #F9FAFB;
+    }
+    .admin-header {
+      margin-bottom: var(--space-6);
+    }
+    .admin-header h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+    }
+    .admin-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: var(--space-4);
+      margin-bottom: var(--space-6);
+    }
+    .stat-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-4);
+    }
+    .stat-card .stat-label {
+      font-size: 14px;
+      color: var(--color-text-muted);
+    }
+    .stat-card .stat-value {
+      font-size: 32px;
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+      margin-top: var(--space-1);
+    }
+    .admin-placeholder {
+      text-align: center;
+      padding: var(--space-10) var(--space-4);
+      background: var(--color-surface);
+      border: 2px dashed var(--color-border);
+      border-radius: var(--radius-xl);
+    }
+    .admin-placeholder p {
+      max-width: 480px;
+      margin: var(--space-3) auto 0;
+    }
+    .loading-screen {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #F9FAFB;
+      font-size: 16px;
+      color: var(--color-text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="loading-screen">Memuat...</div>
+  </div>
+
+  <script type="module" src="/src/admin.js"></script>
+</body>
+</html>
